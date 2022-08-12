@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 200%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  color: rgb(60, 206, 11);
+  text-decoration: solid;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+}
+/*Ritinha Marmitas*/
+.logoname { 
+  text-align: justify;
+  font-size: 37px;
+  letter-spacing: 8px;
+  margin-left: 10px;
+}
+
+.container{
+
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family:'Verdana', cursive;
+  background: #e4f307;
+  height: 35vh;
+  font-size: 24px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+
+footer {
+  background-color: #244e5b; 
+  flex-shrink: 40;
+   
+}
+
+.direitos {
+  font-size: 24px;
+  text-align: center;
+}
+/*Letras rodapé*/
+footer h1, footer h2, footer p, footer a, footer span {
+  color: rgb(234, 223, 17);
+  font-family:'Times New Roman', oblique;
+}
+/*espessura das letras rodapé*/
+footer h1, footer h2 {
+  font-weight: 700;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-box {
+  width: 48%;
+  padding: 0.5%;
+  float: left;
+  display: flex;
+  justify-content:center
+}
+
+footer .wrapper:after {
+  clear:both;
+  content: "";
+  display: block;
+}
+
+.company-footer h2 {
+  margin-top: 30px;
+}
+
+.company-footer p, .company-footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer-list li {
+  margin-bottom: 15px;  
+  
+}
+
+.footer-list a {
+  transition: .5s;
+}
+
+.footer-list a:hover {
+  color: rgb(34, 63, 4);
+}
+
+.footer-list li:after {
+  clear:both;
+  content: "";
+  display: block;
+}
+
+.fab {
+  font-size: 70px;
+  margin-left: 10px;
+  float: left
+}
+
+.footer-list li span{
+  float: left;
+  height: 70px;
+  line-height: 40px;
+}
+
+.footer-bottom p {
+  font-weight: 900;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.slider {
+  flex:1;
+  overflow: hidden;
+}
+
+.slider--width {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.3s;
+}
+
+.slider--item {
+  width: 200vw;
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider--controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: progress;
+}
+
+.slider--control {
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+	vertical-align: middle;
+}
+
+.h1s {
+  color: #39cf0c;
+  font-family:'Georgia', italic;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+/*nome das marmitas nos produtos*/
+p, #product {
+  font-family: 'Arial', oblique;
+  font-size: 28px;
+  text-align: center;
+  color: #190953;
+}
+
+.p-qs {
+  font-family: 'Raleway', sans-serif;
+  font-size: 65px;
+  text-align: left;
+  color: #6e0e0e;
+  margin: 60px;
+
+}
+/*largura entre produtos e rodapé*/
+.produtos {  
+  width: 100%;
+  height: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*espaço das fotos das marmitas*/
+.bolos {
+  cursor: pointer;
+  width: 400px;
+  height: 300px;
+  background-color: #dfdfdf;
+  margin: 10px;
+  border-radius: 10%;
+}
+
+#valor {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  color: #020302;
+}
+
+.quemsomosbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  height: 742px;
+}
+
+.quemsomos {
+  width: 80%;
+  
+}
+
+.quemsomosimg {
+  position:absolute; top:335px; left:0px;  
+}
+
+.contatobox {
+  width: 100%;
+  display: flex; 
+  justify-content:space-between;
+  margin: 10px;
+  flex: 1;
+}
+
+.contato-div {
+  width: 50%;
+}
+
+.form-div {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=submit]:hover {
+  background-color: #082e46;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #12a01e;
+  color: rgb(228, 130, 130);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text],[type=number],[type=email],textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
+}
+
+label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #22e318;
+}
+
+.local {
+  width: 100%;
+  display: flex; 
+  justify-content:space-between;
+  flex: 1;
+}
+
+#maps {
+  margin: 20px;
+}
+
+.produto {  
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  margin: 70px;
+  flex: 1;
+  
+}
+
+.bolo {
+  width: 50%;
+  margin: 40px;
+}
+
+.bolo-imagem {
+  margin: 85px;  
+}
